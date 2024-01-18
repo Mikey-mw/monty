@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	ssize_t read_line = 1;
 	stack_t *stack = NULL;
 	unsigned int counter = 0;
-
+	ssize_t getline(char **lineptr, size_t *n, FILE *stream);
 	if (argc != 2)
 	{
 		fprintf(stderr, "USAGE: monty file\n");
