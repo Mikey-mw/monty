@@ -8,18 +8,18 @@
 */
 void f_pstr(stack_t **head, unsigned int counter)
 {
-	stack_t *head;
+	stack_t *hd;
 	(void)counter;
 
-	head = *head;
-	while (head)
+	hd = *head;
+	while (hd)
 	{
-		if (head->n > 127 || head->n <= 0)
+		if (hd->n > 127 || hd->n <= 0)
 		{
 			break;
 		}
-		printf("%c", head->n);
-		head = head->next;
+		printf("%c", hd->n);
+		hd = hd->next;
 	}
 	printf("\n");
 }
